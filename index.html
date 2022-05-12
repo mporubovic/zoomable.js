@@ -1,0 +1,62 @@
+<html>
+
+<body>
+
+    <div class="zoomable">
+        <div class="square square-a">
+        </div>
+        <div class="square square-b">
+        </div>
+        <div class="square square-c">
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+
+</html>
+
+<style>
+
+html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+body, .zoomable {
+    width: 100vw;
+    height: 100vh;
+}
+
+.zoomable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* transition-duration: 30ms; */
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.square-a {
+    background: linear-gradient(to bottom left, red, blue);
+}
+
+.square-b {
+    background: linear-gradient(to bottom left, green, yellow);
+}
+
+.square-c {
+    background: linear-gradient(to bottom left, black, gray);
+}
+
+</style>
